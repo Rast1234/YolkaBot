@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input.Touch;
 
@@ -35,9 +36,10 @@ namespace YolkaBot.Client
 
         protected override void Initialize()
         {
-            font = Content.Load<SpriteFont>("font1");
+
+            font = LoadFont(Content);
             pepe = Content.Load<Texture2D>("pepe");
-            Drawing.font = font;  // i am sorry for this
+            Drawing.font = font;  // i am sorry for using global variables
             inputs = GetPlatformInputs();
             botConrol.Run();
             base.Initialize();
@@ -56,10 +58,20 @@ namespace YolkaBot.Client
             return result;
         }
 
+        private static SpriteFont LoadFont(ContentManager contentManager)
+        {
+#if ANDROID || IOS || WINRT || WINDOWS_PHONE
+            var fontName = "font2";
+#else
+            var fontName = "font1";
+#endif
+            return contentManager.Load<SpriteFont>(fontName);
+        }
+
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            font = Content.Load<SpriteFont>("font1");
+            font = LoadFont(Content);
         }
 
         protected override void UnloadContent()
