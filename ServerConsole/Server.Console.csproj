@@ -54,12 +54,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CommandMessenger, Version=3.7.1.0, Culture=neutral, processorArchitecture=AMD64">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Arduino-CmdMessenger\extras\CSharp\CommandMessenger.Transport.Serial\bin\Debug\CommandMessenger.dll</HintPath>
+      <HintPath>..\packages\CommandMessenger.3.7.1\lib\net40\CommandMessenger.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="CommandMessenger.Transport.Serial, Version=3.7.0.0, Culture=neutral, processorArchitecture=AMD64">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Arduino-CmdMessenger\extras\CSharp\CommandMessenger.Transport.Serial\bin\Debug\CommandMessenger.Transport.Serial.dll</HintPath>
+      <HintPath>..\packages\CommandMessenger.Transport.Serial.3.7.0\lib\net40\CommandMessenger.Transport.Serial.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
