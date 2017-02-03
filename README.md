@@ -6,8 +6,8 @@ Description
 -----------
 If you want a friend to attend your new year party while he's in another country, build a telepresence bot! It's much better than plain Skype conversation because your friend can control the bot and ride around ~~causing some mess~~ and it actually feels like he's with you in the same room, not behind the screen.
 
-|Building|Completed|Some swag added|
-|-|-|-|
+|Building        |Completed       |Some swag added |
+|----------------|----------------|----------------|
 |![](media/1.jpg)|![](media/2.jpg)|![](media/3.jpg)|
 |Those wires are temporary|Note the USB stick. My HDD suddenly died and i'm running live Manjaro Linux from the USB. Only needed to install a couple of packages.|It was our "christmas tree" actually because we didn't bother to bring a real one. TODO: add LEDs!|
 
@@ -110,8 +110,9 @@ Connect Arduino to the laptop by USB and run server. **On Linux**: you will need
 #### Desktop client
 Use keyboard or any gamepad with two sticks. **On Linux**: there is a bug in MonoGame: it doesn't like genuine PS3 controllers, just crashes. Try another one or remap it with `xboxrdv`.
 Keyoard controls:
+
 |key|action|
-|-|-|
+|---|------|
 |1|left motor forward 100%|
 |Q|left motor forward 50%|
 |A|left motor backward 50%|
@@ -136,6 +137,7 @@ You will need to tweak the code here or there because it has some things hardcod
 * Network addresses in clients' `Program.Main` and `Activity1.OnCreate`
 * Pins in `global.cpp`
 * PWM limit (due to battery voltage in my case) and some other consts in `motor.cpp`
+* Android client isn't Android-dependent because it's based on MonoGame which works on portable Windows and iOS. So if you want' you can run it on Lumia or iPhone, this requires some minor tweaks and proper building setup.
 
 Traffic consumption should be very small because i send raw TCP packets and only when client changes input.
 
@@ -157,7 +159,7 @@ Credits
 
 * Code, idea [vk.com/rast1234](https://vk.com/rast1234)
 * Construction, organization [vk.com/jares13](https://vk.com/jares13)
-* Motivation [vk.com/syrochkin](https://vk.com/syrochkin)
+* That dude who caused this [vk.com/syrochkin](https://vk.com/syrochkin)
 * VirtualGamepad is based on code by [user Aranda](http://community.monogame.net/t/any-alternative-on-virtual-joystick/2669)
 * Scheme made with [Fritzing](fritzing.org) and custom [L298N part](https://github.com/yohendry/arduino_L298N)
 
