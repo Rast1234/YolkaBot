@@ -23,6 +23,7 @@ namespace YolkaBot.Client.Android
         {
             base.OnCreate(bundle);
 
+            // i decided to simplify things and have no configuration for android, just put your hostname here
             //var defaultHost = "your.host:your_port";
             var defaultHost = "127.0.0.1:42038";
             var parts = defaultHost.Trim().Split(':');
