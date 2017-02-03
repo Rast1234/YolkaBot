@@ -137,6 +137,7 @@ You will need to tweak the code here or there because it has some things hardcod
 * Network addresses in clients' `Program.Main` and `Activity1.OnCreate`
 * Pins in `global.cpp`
 * PWM limit (due to battery voltage in my case) and some other consts in `motor.cpp`
+* Android client isn't Android-dependent because it's based on MonoGame which works on portable Windows and iOS. So if you want' you can run it on Lumia or iPhone, this requires some minor tweaks and proper building setup.
 
 Traffic consumption should be very small because i send raw TCP packets and only when client changes input.
 
