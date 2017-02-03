@@ -158,7 +158,7 @@ Credits
 
 * Code, idea [vk.com/rast1234](https://vk.com/rast1234)
 * Construction, organization [vk.com/jares13](https://vk.com/jares13)
-* Motivation [vk.com/syrochkin](https://vk.com/syrochkin)
+* That dude who caused this [vk.com/syrochkin](https://vk.com/syrochkin)
 * VirtualGamepad is based on code by [user Aranda](http://community.monogame.net/t/any-alternative-on-virtual-joystick/2669)
 * Scheme made with [Fritzing](fritzing.org) and custom [L298N part](https://github.com/yohendry/arduino_L298N)
 
